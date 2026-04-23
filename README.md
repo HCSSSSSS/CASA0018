@@ -12,16 +12,10 @@ A real-time animal sound classification system deployed on an Arduino Nano 33 BL
 - **Validation accuracy:** 86.3%
 
 ## Repository Structure
-CASA0018/
-├── code/
-│   └── animal_sound_classifier.ino   # Arduino inference + LED control code
-├── data/
-│   └── trim_birds.py                 # Script to extract loudest 5s from bird recordings
-├── results/
-│   ├── confusion_matrix_validation.png
-│   ├── confusion_matrix_test.png
-│   └── wiring_photo.jpg
-└── README.md
+
+- `code/` — Arduino inference and LED control code
+- `data/` — Python script for bird audio trimming
+- `results/` — Confusion matrices and wiring photo
 
 ## Dataset
 
