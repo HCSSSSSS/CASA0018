@@ -15,7 +15,7 @@ A real-time animal sound classification system deployed on an Arduino Nano 33 BL
 
 - `code/` — Arduino inference and LED control code
 - `data/` — Python script for bird audio trimming
-- `results/` — Confusion matrices and wiring photo
+- `results/` — Confusion matrices, serial output examples and wiring photo
 
 ## Dataset
 
@@ -45,6 +45,8 @@ Bird recordings were trimmed to the 5-second segment of highest amplitude using 
 
 All LED cathodes connect via 330Ω resistors to GND.
 
+![Wiring](results/wiring_photo.jpg)
+
 ## Model Training
 
 Training was conducted in [Edge Impulse](https://edgeimpulse.com). Four iterations were run:
@@ -55,6 +57,15 @@ Training was conducted in [Edge Impulse](https://edgeimpulse.com). Four iteratio
 | v2 | 0.005 | 150 | +Freq mask | 83.9% |
 | v3 | 0.001 | 100 | Default | 85.8% |
 | v4 | 0.001 | 200 | +Time mask High | 86.3% |
+
+![Validation Confusion Matrix](results/confusion_matrix_validation.png)
+![Test Confusion Matrix](results/confusion_matrix_test.png)
+
+## Serial Output Examples
+
+![Bird detection](results/serial_output_bird.png)
+![Dog detection](results/serial_output_dog.png)
+![Cat detection](results/serial_output_cat.png)
 
 ## Usage
 
