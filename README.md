@@ -45,7 +45,7 @@ Bird recordings were trimmed to the 5-second segment of highest amplitude using 
 
 All LED cathodes connect via 330Ω resistors to GND.
 
-![Wiring](results/wiring_photo.jpg)
+<img src="results/wiring_photo.jpg" width="300">
 
 ## Model Training
 
@@ -58,14 +58,16 @@ Training was conducted in [Edge Impulse](https://edgeimpulse.com). Four iteratio
 | v3 | 0.001 | 100 | Default | 85.8% |
 | v4 | 0.001 | 200 | +Time mask High | 86.3% |
 
-![Validation Confusion Matrix](results/confusion_matrix_validation.png)
-![Test Confusion Matrix](results/confusion_matrix_test.png)
+| Validation Set | Test Set |
+|---|---|
+| <img src="results/confusion_matrix_validation.png" width="400"> | <img src="results/confusion_matrix_test.png" width="400"> |
 
 ## Serial Output Examples
 
-![Bird detection](results/serial_output_bird.png)
-![Dog detection](results/serial_output_dog.png)
-![Cat detection](results/serial_output_cat.png)
+| Bird | Dog | Cat |
+|---|---|---|
+| ![Bird detection](results/serial_output_bird.png) | ![Dog detection](results/serial_output_dog.png) | ![Cat detection](results/serial_output_cat.png) |
+
 
 ## Usage
 
