@@ -77,6 +77,10 @@ Training was conducted in [Edge Impulse](https://edgeimpulse.com). Four iteratio
 4. Upload to device
 5. Play animal sounds near the microphone — LEDs will activate when confidence exceeds 0.90
 
+## Demo Video
+
+[demo.mp4](video/CASA0018.mp4)
+
 ## Edge Impulse Project
 
 [CASA0018-HCS on Edge Impulse](https://studio.edgeimpulse.com/studio/939419)
